@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://th.bing.com/th/id/R.9069ae2c83237354d556ac82e37c8066?rik=wVvlGFIhBYX5bg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f06%2fHD-images-of-nature-download.jpg&ehk=J7hY3CfwcsW7lTkuGbE3nQPUYPdt1OTluYfKHRW62qs%3d&risl=&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.login-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 80px;
+    /* width: 100%; */
+    border-radius: 14px;
+    box-shadow: 0 0 20px rgba(45, 39, 39, 0.2);
+    border: 3px solid white;
+    backdrop-filter: blur(4px);
+
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #430404;
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+input {
+    width: 200px;
+    padding: 10px 0;
+    border: 2px solid white;
+    border-bottom: 2px solid #ddd;
+    background: transparent;
+    /* outline: none; */
+    font-size: 16px;
+    border-radius: 10px;
+    color: #ff0000;
+    padding:;
+}
+
+label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    transition: 0.3s ease-out;
+    color: #000000;
+}
+
+input:focus ~ label,
+input:valid ~ label {
+    top: -20px;
+    color: #2196F3;
+    font-size: 14px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 9px;
+    background: #2196F3;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+    background: #1976D2;
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+}
