@@ -82,11 +82,15 @@ input:valid ~ label {
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    /* finer-grained transitions for a smooth lift+scale hover */
+    transition: background-color 200ms ease, transform 220ms cubic-bezier(0.2,0.9,0.2,1), box-shadow 220ms ease, filter 220ms ease;
 }
 
 .login-btn:hover {
     background: #1976D2;
-    transform: scale(1.02);
-    box-shadow: 0 5px 15px rgba(33, 150, 243, 0.3);
+    /* lift up slightly and scale more noticeably */
+    transform: translateY(-3px) scale(1.08);
+    /* stronger, layered shadow for a luminous hover effect */
+    box-shadow: 0 12px 30px rgba(25, 118, 210, 0.35), 0 4px 8px rgba(33,150,243,0.15);
+    filter: brightness(1.03);
 }
